@@ -1,11 +1,8 @@
 'use client'
 import { useEffect } from 'react'
 import Lenis, { LenisOptions } from '@studio-freight/lenis'
-
 import HeroSection from '@/components/hero/page'
-import ProjectSection from '@/components/project/page'
-import WhatSection from '@/components/whatithink/page'
-import SkillsSection from '@/components/skills/page'
+import Navbar from '@/components/nav/page'
 
 export default function Page() {
   useEffect(() => {
@@ -33,10 +30,8 @@ export default function Page() {
 
   return (
     <main>
+      <Navbar/>
       <HeroSection />
-      <SkillsSection />
-      <ProjectSection />
-      <WhatSection />
     </main>
   )
 }
